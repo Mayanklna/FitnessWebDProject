@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONTEIL FITNESS!!</title>
+<link rel="stylesheet" type="text/css" href="homecss.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<script src="{% static 'master.js' %}"></script>
+<link rel="stylesheet" href="{% static 'master.css' %}" />
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+            <img src="{% static 'images/logo.png' %}" class="logo"  >
+            <ul class="navbar-nav nav ">
+				<li class="nav-item"><a href="{% url 'users:register' %}" class="nav-link"><font color="#000000"> Register</font></a></li>
+                <li>
+<a href="#" class="nav-link"><font color="#000000">Our Initiative</font> </a>
+
+</li>
+<li>
+<a href="#" class="nav-link"><font color="#000000">Our Community</font> </a>
+
+</li>
+<li>
+<a href="#" class="nav-link">Contact Us</a>
+
+</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+
+        {% block body_block %}
+
+
+
+
+<div class="main-content">
+<h1>WELCOME TO <span class="animation">THE MONTEIL FITNESS</span> <br>
+bla bla bla</h1>
+<a href="{% url 'users:login' %}" class="btn btn-half">LOGIN</a>
+
+<a href="{% url 'users:register' %}" class="btn btn-half">REGISTER</a>
+
+</div>
+</header>
+
+
+        {% endblock %}
+
+    </div>
+</body>
+
+</html>
