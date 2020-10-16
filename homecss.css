@@ -4,16 +4,21 @@
 	box-sizing: border-box;
 }
 body{
+	background-image:/*linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)) */url("undraw_yoga_248n.png");
+	background-repeat: no-repeat;
+	background-position: 140% 50%;
+	background-size: auto;
+	height: 100vh;
 	font-size: 20px;
 	overflow-x: hidden;
 	color: black;
 }
 header{
-background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)) url("undraw_yoga_248n.png");
-background-color: gray;
-background-size: cover;
-background-repeat: no-repeat;
-height: 100vh;
+
+/*background-color: gray;*/
+/*background-size: cover;*/
+
+
 }
 .row{
 	max-width: 1180px;
